@@ -1,6 +1,6 @@
 # Saltstack: salt-states
 
-Example SaltStack states configurations
+Example SaltStack states configurations.
 
 This repo is intended to be used in conjunction with my salt-pillar repo found here: https://github.com/nicholashoule/salt-pillar. You may use your own salt-pillar repos and/or reference pillar_roots local files.
 
