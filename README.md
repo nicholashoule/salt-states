@@ -71,9 +71,11 @@ gitfs_ssl_verify: True
 #  - 'salt/minion/*/start':             # Match tag "salt/minion/*/start"
 reactor:
   - 'minion_start':
-    - salt://reactor/start_ubuntu.sls   # Things to do when a ubuntu minion starts
-    - salt://reactor/start_raspbian.sls # Things to do when a Raspbian minion starts
-    - salt://reactor/sync_grains.sls    # Sync custom grains
+    - salt://reactor/start_raspbian_users.sls    # Things to do when a ubuntu minion starts
+    - salt://reactor/start_raspbian_packages.sls # Things to do when a ubuntu minion starts
+    - salt://reactor/start_ubuntu_users.sls      # Things to do when a Raspbian minion starts
+    - salt://reactor/start_ubuntu_packages.sls   # Things to do when a Raspbian minion starts
+    - salt://reactor/sync_grains.sls             # Sync custom grains
 
 ```
 
